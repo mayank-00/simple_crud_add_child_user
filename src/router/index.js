@@ -3,18 +3,21 @@ import VueRouter from 'vue-router'
 
 import Cookies from "js-cookie"
 
+import LandingPage from '../views/LandingPage/index.vue'
+import Users from '../views/Users/index.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'LandingPage',
-    component: () => import(/* webpackChunkName: "/" */ '../views/LandingPage/index.vue')
+    component: LandingPage
   },
   {
     path: '/users',
     name: 'Users',
-    component: () => import(/* webpackChunkName: "users" */ '../views/Users/index.vue')
+    component: Users
   }
 ]
 
