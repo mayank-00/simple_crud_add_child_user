@@ -11,8 +11,6 @@ import App from './App.vue'
 
 import './assets/css/main.css'
 
-Vue.config.productionTip = false
-
 Vue.use(VueMaterial)
 
 new Vue({
