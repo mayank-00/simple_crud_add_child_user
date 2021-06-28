@@ -3,7 +3,7 @@ import Cookies from "js-cookie"
 
 const instance = axios.create({
     baseURL: process.env.VUE_APP_SERVER,
-    timeout: 5000,
+    timeout: 25000,
     headers: {
         'Cache-Control': 'no-cache',
         "accept": 'application/json',
